@@ -1,0 +1,11 @@
+product_name,photo_url,barcode,price_cents,sku (unique id),producer
+Tea - Camomele,http://dummyimage.com/237x192.png/ff4444/ffffff,V8822,71127,0285b967-261a-4a95-a21c-5c797ac7c0a2,McLaughlin-Bosco
+Eggroll,http://dummyimage.com/103x112.bmp/cc0000/ffffff,99689,94899,0d9803c2-d16d-4f38-826c-f9869f619166,"Weber, Cremin and Hermiston"
+"Lid - High Heat, Super Clear",http://dummyimage.com/163x140.jpg/dddddd/000000,E8013,89271,049d0c34-238c-47b0-ab49-154a37fbd163,Gislason LLC
+"Chicken - Breast, 5 - 7 Oz",http://dummyimage.com/119x191.bmp/5fa2dd/ffffff,60499,27505,d7c3fed8-600c-4ec0-8261-909199741831,Weimann-Grady
+Puree - Blackcurrant,http://dummyimage.com/137x139.jpg/dddddd/000000,V454,2425,be4c0300-251e-4f6c-bf2c-a18f02435c29,Hyatt-Jacobson
+"Sauce - Apple, Unsweetened",http://dummyimage.com/100x159.jpg/5fa2dd/ffffff,5299,59489,8e17edc7-3021-4c22-a449-2cc3cbabdb45,Strosin Inc
+Cabbage - Red,http://dummyimage.com/244x219.bmp/5fa2dd/ffffff,64621,8989,e38615c5-aa0f-4a29-85e8-075d9316c5a6,"Lesch, Hoeger and Senger"
+Green Scrubbie Pad H.duty,http://dummyimage.com/138x166.bmp/cc0000/ffffff,64690,75466,9a5468bb-8041-4b8a-95e3-87a4d5141728,"Nienow, Carroll and Stroman"
+Iced Tea Concentrate,,96979,46221,48aa5add-702b-4259-b749-fd9b5063bbfd,
+Bread Fig And Almond,http://dummyimage.com/117x146.jpg/cc0000/ffffff,43390,29995,3bb8e144-65a6-4c88-b24c-97d887420b7d,Schroeder-Reichel
