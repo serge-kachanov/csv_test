@@ -12,6 +12,6 @@ class CreateProducts < ActiveRecord::Migration[5.2]
     end
 
     add_index :products, :sku, unique: true
-    add_index :products, :producer
+    execute("CREATE INDEX 'index_products_on_producer' ON 'products' ('producer' COLLATE NOCASE);")
   end
 end
