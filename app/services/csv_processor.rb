@@ -9,17 +9,17 @@ class CsvProcessor
   end
 
   def perform
-    process_rows
+    csv_rows = parse_rows
+    process_rows(csv_rows)
   end
 
   private
 
-  def process_rows
-    csv_rows = CSV.new(rows.join, write_headers: true, headers: headers)
-    adapt_rows(csv_rows)
+  def parse_rows
+    CSV.new(rows.join, write_headers: true, headers: headers)
   end
 
-  def adapt_rows(csv_rows)
+  def process_rows(csv_rows)
     csv_rows.map { |row| ProductRowAdapter.new(row).perform }
   end
 end

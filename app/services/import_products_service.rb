@@ -1,5 +1,3 @@
-require 'csv'
-
 class ImportProductsService
   FILE_PATH = Rails.root.join('csv_storage', 'MOCK_DATA.csv').freeze
   BATCH_SIZE = 100
@@ -18,11 +16,15 @@ class ImportProductsService
 
   def process_file
     File.open(file_path, 'r') do |file|
-      headers = file.first.strip
-      file.lazy.each_slice(BATCH_SIZE) do |rows|
-        products_to_save = process_csv(rows, headers)
-        save_products(products_to_save)
-      end
+      proccess_slices(file)
+    end
+  end
+
+  def proccess_slices(file)
+    headers = file.first.strip
+    file.lazy.each_slice(BATCH_SIZE) do |rows|
+      products_to_save = process_csv(rows, headers)
+      save_products(products_to_save)
     end
   end
 
