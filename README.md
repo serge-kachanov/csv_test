@@ -15,10 +15,10 @@ rails db:migrate
 rails s
 ```
 ## Usage
-Application URL is `localhost:3000/products?producer=producer_name`
+Application URL is `localhost:3000/products?producer=producer_name`;
 
 You can use `page` `per_page` HTTP params for pagination, and provide Producer Name to search products;
 
-Application will update its database 1 time per day via whenever task;
+Application will update its database 1 time per day via whenever task, use whenever readme for setup https://github.com/javan/whenever;
 
 You can provide alternative CSV file path in parameters for ImportProductsService;
